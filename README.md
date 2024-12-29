@@ -1,0 +1,3 @@
+# Unoptimized Tail Recursion in Hack
+
+This repository demonstrates a common issue in Hack related to tail recursion.  Hack does not automatically optimize tail-recursive functions, which can lead to stack overflow errors for deeply recursive calls.  The `foo` function is a simple factorial calculation, which is tail-recursive, however this implementation will crash due to stack overflow error. The solution demonstrates how to avoid this issue by refactoring to an iterative approach or using a helper function.
